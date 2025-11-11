@@ -6,7 +6,7 @@ It streamlines student to student service exchange by combining verified profile
 
 Features
 
- 🧩 Basic Functions
+ Basic Functions
 - **User Registration & Login** — secure authentication using bcrypt + JWT.  
 - **Service Listings** — create, update, search, and delete listings by category.  
 - **Booking System** — schedule services, view active/past bookings, cancel sessions.  
