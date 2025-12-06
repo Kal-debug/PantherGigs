@@ -15,9 +15,19 @@ app.use(express.urlencoded({ extended: true }));
 
 // Import routes
 const authRoutes = require('./routes/auth');
+const servicesRoutes = require('./routes/services');
+const bookingsRoutes = require('./routes/bookings');
+const walkingTimeRoutes = require('./routes/walkingTime');
+const parserRoutes = require('./routes/parser');
+const reviewsRoutes = require('./routes/reviews');
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/services', servicesRoutes);
+app.use('/api/bookings', bookingsRoutes);
+app.use('/api/walking-time', walkingTimeRoutes);
+app.use('/api/parser', parserRoutes);
+app.use('/api/reviews', reviewsRoutes);
 
 // Health check route
 app.get('/', (req, res) => {
